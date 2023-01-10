@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Contact - Alura Barber Shop</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="box">
+                <H1><img src="logo.png" alt="Logo of Alura Barber Shop"></H1>
+                
+                <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="products.html">products</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+                </nav>
+            </div>
+        </header>
+        <Main>
+            <form>
+                <label for="fullName">Full name</label>
+                <input type="text" id="fullName" class="input-standard" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-standard" required placeholder="youremail@domain.com">
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" class="input-standard" required placeholder="(xxx)xxx-xxxx">
+
+                <label for="message">Message</label>
+                <textarea cols="70" rows="10" id="message" class="input-standard" required></textarea>
+                
+                <fieldset>
+                    <legend>How do you prefer to be contacted?</legend>
+
+                    <label for="radio-email"><input type="radio" name="contact" value="email" id="radio-email">Email</label>
+                    
+
+                    
+                    <label for="radio-phone"><input type="radio" name="contact" value="phone" id="radio-phone">Phone</label>
+                    
+
+                    <label for="radio-whatsapp"><input type="radio" name="contact" value="whatsapp" id="radio-whatsapp" checked
+                        >Whatsapp</label>
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>What is the best time to be contacted?</legend>
+                    <select>
+                        <option>Morning</option>
+                        <option>Afternoon</option>
+                        <option>Night</option>
+                    </select>
+                </fieldset>
+               
+
+                <Label class="checkbox"><input type="checkbox" checked> Would you like to receive news by email?</Label>                
+
+                <input type="submit" value="Submit" class="submit">
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>8am ~ 20pm</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>8am ~ 20pm</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>8am ~ 4pm</td>
+                    </tr>
+                </tbody>
+                
+                
+            </table>            
+        </Main>
+
+        <footer>
+            <img src="white-logo.png" alt="Logo Alura Barber Shop">
+            <p class="copright">&copy; Copright Barbearia Alura 2019</p>
+        </footer>
+    </body>
+</html>
